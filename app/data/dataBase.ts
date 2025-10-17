@@ -3,6 +3,16 @@ export interface Navbar {
   title: string;
   relocation: string;
 }
+export interface Title {
+  salute: string;
+  mainTitle: string;
+  subTitle: string;
+}
+export const title: Title = {
+  salute: "Hola!",
+  mainTitle: "Soy Rubén Collazo",
+  subTitle: "Soy un desarrollador frontend en practicas",
+};
 export const tabs: Navbar[] = [
   {
     id: 1,
