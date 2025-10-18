@@ -1,4 +1,6 @@
 <template>
-  <HeaderPfl></HeaderPfl>
-  <FooterPfl></FooterPfl>
+  <HeaderPfl />
+  <HeroPfl />
+  <FooterPfl />
 </template>
+<style scoped></style>
