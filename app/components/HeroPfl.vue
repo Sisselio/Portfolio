@@ -1,16 +1,19 @@
 <template>
-  <TitlePfl class="hero" :title="title" />
+  <div class="hero">
+    <TitlePfl class="title" :title="title" />
+    <ArrowButtonPfl class="arrow" :id="1"/>
+  </div>
 </template>
 <script setup lang="ts">
 import { title } from "~/data/dataBase";
+
 </script>
 <style scoped>
 .hero {
-  margin-top: 12em;
+  margin-top: 5em;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
 }
 </style>
