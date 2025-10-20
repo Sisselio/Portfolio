@@ -1,8 +1,9 @@
 <template>
-  <div class="actualJob">
+  <div class="job">
     <p class="jobName">{{ job.name }}</p>
     <p class="jobDuration">{{ job.duration }}</p>
     <p class="jobDescription">{{ job.description }}</p>
+    <hr class="slash" />
   </div>
 </template>
 <script setup lang="ts">
@@ -16,18 +17,17 @@ defineProps<{
 }>();
 </script>
 <style scoped>
-.actualJob {
-  padding: 1em;
-  background-color: #213157;
-  border-radius: 0.9375rem;
-  color: white;
+.job {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
   margin-bottom: 2em;
-  max-width: 80em;
 }
 .jobName {
   color: white;
   margin-left: 1em;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 .jobDuration {
   color: white;
@@ -38,5 +38,12 @@ defineProps<{
   color: white;
   margin-left: 3em;
   font-size: 1.15em;
+}
+.slash {
+  width: 60%;
+  height: 0.25em;
+  background-color: white;
+  margin-left: 0em;
+  margin-top: 1.625em;
 }
 </style>

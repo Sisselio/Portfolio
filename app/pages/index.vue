@@ -1,7 +1,7 @@
 <template>
   <HeaderPfl />
   <HeroPfl />
-  <AboutMePfl></AboutMePfl>
+  <AboutMePfl />
+  <Experience />
   <FooterPfl />
 </template>
-<style scoped></style>

@@ -3,7 +3,7 @@
     <ul>
       <li class="navbar">
         <Button-pfl
-          v-for="tab in tabs.filter((tab) => tab.id !== 3)"
+          v-for="tab in tabs"
           :key="tab.id"
           :relocation="tab.relocation"
           :tab="tab"
