@@ -20,7 +20,6 @@ const tab = computed(() => tabs[props.id] ?? null);
   justify-content: center;
   width: 100%;
   gap: 0.5em;
-  margin-bottom: 1em;
 }
 .arrowIcon {
   width: 2em;
