@@ -2,6 +2,7 @@
   <HeaderPfl />
   <HeroPfl />
   <AboutMePfl />
-  <Experience />
+  <ExperiencePfl />
+  <SkillsPfl />
   <FooterPfl />
 </template>

@@ -21,9 +21,56 @@ export interface Jobs {
   description: string;
   actual: boolean;
 }
+export interface Skill {
+  name: string;
+  icon: string;
+}
+export const skills: Skill[] = [
+  {
+    name: "HTML",
+    icon: "devicon:html5",
+  },
+  {
+    name: "CSS",
+    icon: "devicon:css3",
+  },
+  {
+    name: "JavaScript",
+    icon: "devicon:javascript",
+  },
+  {
+    name: "Vue",
+    icon: "devicon:vuejs",
+  },
+  {
+    name: "Tailwind",
+    icon: "devicon:tailwindcss",
+  },
+  {
+    name: "Bootstrap",
+    icon: "devicon:bootstrap",
+  },
+  {
+    name: "Nuxt",
+    icon: "devicon:nuxtjs",
+  },
+  {
+    name: "Java",
+    icon: "devicon:java",
+  },
+  {
+    name: "SQL",
+    icon: "devicon:mysql",
+  },
+  {
+    name: "Git",
+    icon: "devicon:git",
+  },
+];
+
 export const jobs: Jobs[] = [
   {
-    name: "Desarrollador Frontend en TechNova",
+    name: "Desarrollador Frontend en Indra",
     duration: "Enero 2022 - Presente",
     description:
       "Desarrollo de interfaces web modernas con React y TailwindCSS, colaborando con el equipo de diseño para mejorar la experiencia de usuario.",

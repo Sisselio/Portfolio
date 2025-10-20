@@ -1,22 +1,29 @@
 <template>
   <div class="hero" id="Home">
     <TitlePfl class="title" :title="title" />
-    <ArrowButtonPfl class="arrowButon" :id="1" />
+    <div class="arrowButtonWrapper">
+      <ArrowButtonPfl class="arrowButton" :id="1" />
+    </div>
   </div>
 </template>
+
 <script setup lang="ts">
 import { title } from "~/data/dataBase";
 </script>
+
 <style scoped>
 .hero {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   height: 100dvh;
+  padding: 5em 0;
 }
-.arrowButon {
-  align-self: flex-end;
-  justify-self: flex-end;
+
+.arrowButtonWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 </style>
