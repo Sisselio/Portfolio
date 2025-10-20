@@ -1,7 +1,7 @@
 <template>
-  <div class="skills">
+  <div class="skills" id="Competencias">
     <SecondTitlePfl :secondTitle="secondTitle!" />
-    <div class="skillBoxes" id="Competencias">
+    <div class="skillBoxes">
       <div v-for="skill in skills">
         <SkillBoxPfl :skill="skill" class="skillBox" />
       </div>
