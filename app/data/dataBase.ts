@@ -15,6 +15,36 @@ export interface AboutMe {
   firstPart: string;
   secondPart: string;
 }
+export interface Jobs {
+  name: string;
+  duration: string;
+  description: string;
+  actual: boolean;
+}
+export const jobs: Jobs[] = [
+  {
+    name: "Desarrollador Frontend en TechNova",
+    duration: "Enero 2022 - Presente",
+    description:
+      "Desarrollo de interfaces web modernas con React y TailwindCSS, colaborando con el equipo de diseño para mejorar la experiencia de usuario.",
+    actual: true,
+  },
+  {
+    name: "Ingeniero Frontend Junior en PixelForge",
+    duration: "Marzo 2021 - Diciembre 2021",
+    description:
+      "Apoyo en la construcción de componentes reutilizables en Vue.js y mantenimiento de estilos con SCSS en aplicaciones internas.",
+    actual: false,
+  },
+  {
+    name: "UI Developer Freelance",
+    duration: "Julio 2020 - Febrero 2021",
+    description:
+      "Implementación de sitios web responsivos para pequeñas empresas, enfocándose en rendimiento, accesibilidad y compatibilidad entre navegadores.",
+    actual: false,
+  },
+];
+
 export const title: Title = {
   salute: "Hola!",
   mainTitle: "Soy Rubén Collazo",
