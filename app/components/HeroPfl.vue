@@ -1,7 +1,7 @@
 <template>
   <div class="hero" id="Home">
     <TitlePfl class="title" :title="title" />
-    <div class="arrowButtonWrapper">
+    <div class="arrowButton">
       <ArrowButtonPfl class="arrowButton" :id="1" />
     </div>
   </div>
@@ -21,7 +21,7 @@ import { title } from "~/data/dataBase";
   padding: 5em 0;
 }
 
-.arrowButtonWrapper {
+.arrowButton {
   display: flex;
   justify-content: center;
   width: 100%;
