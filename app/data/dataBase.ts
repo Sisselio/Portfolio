@@ -31,7 +31,28 @@ export interface Project {
   languages: Skill[];
   description: string;
 }
-
+export interface Form {
+  name: string;
+  type: string;
+}
+export const forms: Form[] = [
+  {
+    name: "Nombre: ",
+    type: "text",
+  },
+  {
+    name: "Apellidos: ",
+    type: "text",
+  },
+  {
+    name: "Email: ",
+    type: "email",
+  },
+  {
+    name: "Comentarios: ",
+    type: "text",
+  },
+];
 export const skills: Skill[] = [
   {
     name: "HTML",
