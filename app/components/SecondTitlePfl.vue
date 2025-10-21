@@ -1,5 +1,3 @@
-import { SecondTitle, AboutMe } from '../../.nuxt/components'; import { title }
-from '../data/dataBase';
 <template>
   <div class="secondTitle">
     <h2 class="title">{{ secondTitle.title }}</h2>

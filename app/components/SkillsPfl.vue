@@ -6,6 +6,7 @@
         <SkillBoxPfl :skill="skill" class="skillBox" />
       </div>
     </div>
+    <ArrowButtonPfl :id="4" class="arrowButton" />
   </div>
 </template>
 <script setup lang="ts">
@@ -33,5 +34,8 @@ const secondTitle = secondTitles[2];
 }
 .skillBox {
   margin-top: 5em;
+}
+.arrowButton {
+  margin-top: 1em;
 }
 </style>

@@ -82,16 +82,22 @@ function getSkillsByNames(names: string[], skillList: Skill[]): Skill[] {
 
 export const projects: Project[] = [
   {
-    image: "proyecto-vue.jpg",
+    image: "/vue.png",
     name: "Proyecto Vue",
     languages: getSkillsByNames(["Vue", "JavaScript", "Tailwind"], skills),
     description: "Proyecto con Vue y Tailwind CSS.",
   },
   {
-    image: "proyecto-java.jpg",
+    image: "/java.png",
     name: "Proyecto Java",
     languages: getSkillsByNames(["Java", "SQL"], skills),
     description: "Backend con Java y MySQL.",
+  },
+  {
+    image: "/nuxt.png",
+    name: "Proyecto Nuxt",
+    languages: getSkillsByNames(["Nuxt", "SQL"], skills),
+    description: "Backend con Nuxt y MySQL.",
   },
 ];
 

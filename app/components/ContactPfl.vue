@@ -1,23 +1,20 @@
 <template>
-  <div class="projects" id="Proyectos">
+  <div class="contact" id="Contactar">
     <SecondTitlePfl :second-title="secondTitle!" />
-    <div v-for="(project, index) in projects" :key="project.name">
-      <ProjectCardPfl :project="project" :index="index" />
-    </div>
   </div>
 </template>
 <script setup lang="ts">
 import { secondTitles } from "~/data/dataBase";
-import { projects } from "~/data/dataBase";
 
-const secondTitle = secondTitles[3];
+const secondTitle = secondTitles[4];
 </script>
 <style scoped>
-.projects {
+.contact {
   height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #0f172a;
 }
 </style>

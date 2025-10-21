@@ -1,10 +1,21 @@
 <template>
   <header class="header">
-    <NuxtImg class="logo" src="/LogoPflVector.svg" alt="Logo" />
+    <NuxtImg
+      class="logo"
+      src="/LogoPflVector.svg"
+      alt="Logo"
+      @click="irAHome"
+    />
     <NavbarPfl />
   </header>
 </template>
-<script></script>
+<script setup lang="ts">
+const router = useRouter();
+
+function irAHome() {
+  router.push("/#Home");
+}
+</script>
 <style scoped>
 .header {
   position: fixed;
@@ -22,5 +33,6 @@
 .logo {
   width: 1.5em;
   fill: #4299e1;
+  cursor: pointer;
 }
 </style>
