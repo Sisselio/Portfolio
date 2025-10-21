@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <NuxtImg class="logo" src="/LogoPflVector.svg" alt="Logo" />
-    <NavbarPfl></NavbarPfl>
+    <NavbarPfl />
   </header>
 </template>
 <script></script>

@@ -25,6 +25,13 @@ export interface Skill {
   name: string;
   icon: string;
 }
+export interface Project {
+  image: string;
+  name: string;
+  languages: Skill[];
+  description: string;
+}
+
 export const skills: Skill[] = [
   {
     name: "HTML",
@@ -65,6 +72,26 @@ export const skills: Skill[] = [
   {
     name: "Git",
     icon: "devicon:git",
+  },
+];
+function getSkillsByNames(names: string[], skillList: Skill[]): Skill[] {
+  return names
+    .map((name) => skillList.find((skill) => skill.name === name))
+    .filter((skill): skill is Skill => skill !== undefined);
+}
+
+export const projects: Project[] = [
+  {
+    image: "proyecto-vue.jpg",
+    name: "Proyecto Vue",
+    languages: getSkillsByNames(["Vue", "JavaScript", "Tailwind"], skills),
+    description: "Proyecto con Vue y Tailwind CSS.",
+  },
+  {
+    image: "proyecto-java.jpg",
+    name: "Proyecto Java",
+    languages: getSkillsByNames(["Java", "SQL"], skills),
+    description: "Backend con Java y MySQL.",
   },
 ];
 

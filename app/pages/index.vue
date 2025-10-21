@@ -4,5 +4,6 @@
   <AboutMePfl />
   <ExperiencePfl />
   <SkillsPfl />
+  <ProjectsPfl />
   <FooterPfl />
 </template>
