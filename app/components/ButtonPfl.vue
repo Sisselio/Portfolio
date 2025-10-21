@@ -1,5 +1,5 @@
 <template>
-  <button class="button" @click="">
+  <button class="button">
     <a class="a" :href="tab.relocation">{{ tab.title }}</a>
   </button>
 </template>
