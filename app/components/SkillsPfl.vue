@@ -18,7 +18,7 @@ import { secondTitles } from "~/data/dataBase";
 
 const secondTitle = secondTitles[2];
 </script>
-<style scoped>
+<style scoped lang="scss">
 .skills {
   min-height: 100dvh;
   display: flex;
@@ -26,6 +26,9 @@ const secondTitle = secondTitles[2];
   justify-content: center;
   flex-direction: column;
   background-color: #0f172a;
+  @include respond-until("sm") {
+    font-size: 0.7em;
+  }
 }
 .skillBoxes {
   display: flex;
@@ -34,6 +37,10 @@ const secondTitle = secondTitles[2];
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 50em;
+  @include respond-until("sm") {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
 }
 .skillBox {
   margin-top: 5em;

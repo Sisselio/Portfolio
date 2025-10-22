@@ -18,8 +18,9 @@ import { aboutMe } from "~/data/dataBase";
 
 const secondTitle = computed(() => secondTitles[0] ?? null);
 </script>
-<style scoped>
+<style scoped lang="scss">
 .aboutMe {
+  background-color: #0f172a;
   margin-top: 5em;
   display: flex;
   align-items: center;
@@ -27,7 +28,21 @@ const secondTitle = computed(() => secondTitles[0] ?? null);
   flex-direction: column;
   background-color: #0f172a;
   min-height: 100dvh;
+  width: 100%;
+  @include respond-until("sm") {
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0f172a;
+    min-height: 100dvh;
+    width: 100%;
+    font-size: 0.5em;
+    padding: 5em;
+  }
 }
+
 .aboutMeParr {
   color: white;
   font-size: 2em;

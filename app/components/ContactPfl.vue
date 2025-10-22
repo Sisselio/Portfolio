@@ -5,6 +5,7 @@
     <form class="form">
       <div v-for="(form, index) in forms" class="form-field">
         <label :for="form.name">{{ form.name }}</label>
+        <br />
         <input
           :id="form.name"
           :type="form.type"
@@ -25,7 +26,7 @@ import { forms } from "~/data/dataBase";
 
 const secondTitle = secondTitles[4];
 </script>
-<style scoped>
+<style scoped lang="scss">
 .contact {
   min-height: 100dvh;
   display: flex;
@@ -34,6 +35,9 @@ const secondTitle = secondTitles[4];
   flex-direction: column;
   background-color: #0f172a;
   color: white;
+  @include respond-until("sm") {
+    font-size: 0.7em;
+  }
 }
 .form {
   display: flex;
@@ -43,12 +47,11 @@ const secondTitle = secondTitles[4];
   background-color: #24345c;
   border-radius: 0.9375em;
   padding: 1em;
-  width: 50em;
 }
 .input {
   background-color: #465d8e;
   border-radius: 0.9375em;
-  width: 48em;
+  width: 55dvw;
   height: 4em;
 }
 .button {
@@ -56,7 +59,7 @@ const secondTitle = secondTitles[4];
   background-color: #4299e1;
   border-radius: 0.9375em;
   border: none;
-  width: 48em;
+  width: 55dvw;
   height: 4em;
   margin-top: 1em;
 }

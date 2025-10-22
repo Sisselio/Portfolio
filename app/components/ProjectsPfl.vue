@@ -14,12 +14,18 @@ import { projects } from "~/data/dataBase";
 
 const secondTitle = secondTitles[3];
 </script>
-<style scoped>
+<style scoped lang="scss">
 .projects {
   min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 5em;
+  @include respond-until("sm") {
+    margin-left: 5em;
+    margin-right: 5em;
+    font-size: 0.7em;
+  }
 }
 </style>
