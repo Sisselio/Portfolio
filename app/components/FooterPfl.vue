@@ -20,18 +20,26 @@ import { Icon } from '../../.nuxt/components';
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
-<style scoped>
+<style scoped lang="scss">
 .footer {
   height: 15dvh;
-  width: 50vw;
+  width: 90%;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 2em;
+  gap: 1em;
   margin: 2em auto;
+  box-sizing: border-box;
+  padding: 0 1em;
+  @include respond-until("sm") {
+    margin-left: 5em;
+    margin-right: 5em;
+    font-size: 0.7em;
+  }
 }
+
 .footerDerecha {
   display: flex;
   flex-direction: row;

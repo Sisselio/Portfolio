@@ -4,4 +4,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/reset.css"],
   modules: ["@nuxt/image", "@nuxt/icon"],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/assets/styles/_responsive.scss";',
+        },
+      },
+    },
+  },
 });

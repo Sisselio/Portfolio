@@ -12,7 +12,7 @@
 import { title } from "~/data/dataBase";
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .hero {
   display: flex;
   flex-direction: column;
@@ -20,6 +20,9 @@ import { title } from "~/data/dataBase";
   align-items: center;
   min-height: 100dvh;
   padding: 5em 0;
+  @include respond-until("sm") {
+    font-size: 0.7em;
+  }
 }
 
 .arrowButton {
