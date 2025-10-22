@@ -1,16 +1,16 @@
-import { secondTitle, AboutMe } from '../data/dataBase';
 <template>
-  <div class="experience" id="Mi experiencia">
-    <SecondTitlePfl :secondTitle="secondTitle!"></SecondTitlePfl>
+  <section class="experience" id="mi-experiencia" aria-label="Mi experiencia">
+    <SecondTitlePfl :secondTitle="secondTitle!" />
+
     <ul>
       <li v-for="job in jobs.filter((job) => job.actual === true)">
-        <ActualJobPfl :job="job"></ActualJobPfl>
+        <ActualJobPfl :job="job" />
       </li>
       <li v-for="job in jobs.filter((job) => job.actual !== true)">
-        <JobPfl :job="job"></JobPfl>
+        <JobPfl :job="job" />
       </li>
     </ul>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -25,6 +25,6 @@ const secondTitle = computed(() => secondTitles[1] ?? null);
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100dvh;
+  min-height: 100dvh;
 }
 </style>

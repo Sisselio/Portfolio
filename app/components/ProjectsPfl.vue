@@ -1,11 +1,13 @@
 <template>
-  <div class="projects" id="Proyectos">
+  <section class="projects" id="proyectos" aria-label="Proyectos">
     <SecondTitlePfl :second-title="secondTitle!" />
-    <div v-for="(project, index) in projects" :key="project.name">
+
+    <div v-for="(project, index) in projects">
       <ProjectCardPfl :project="project" :index="index" />
     </div>
-  </div>
+  </section>
 </template>
+
 <script setup lang="ts">
 import { secondTitles } from "~/data/dataBase";
 import { projects } from "~/data/dataBase";
@@ -14,7 +16,7 @@ const secondTitle = secondTitles[3];
 </script>
 <style scoped>
 .projects {
-  height: 100dvh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;

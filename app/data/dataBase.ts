@@ -184,26 +184,26 @@ export const tabs: Navbar[] = [
   {
     id: 2,
     title: "Sobre mí",
-    relocation: "/#Sobre mi",
+    relocation: "/#sobre-mi",
   },
   {
     id: 3,
     title: "Mi experiencia",
-    relocation: "/#Mi experiencia",
+    relocation: "/#mi-experiencia",
   },
   {
     id: 4,
     title: "Competencias",
-    relocation: "/#Competencias",
+    relocation: "/#competencias",
   },
   {
     id: 5,
     title: "Proyectos",
-    relocation: "/#Proyectos",
+    relocation: "/#proyectos",
   },
   {
     id: 6,
     title: "Contactar",
-    relocation: "/#Contactar",
+    relocation: "/#contactar",
   },
 ];

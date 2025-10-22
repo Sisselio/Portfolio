@@ -1,14 +1,17 @@
 <template>
-  <div class="skills" id="Competencias">
+  <section class="skills" id="competencias" aria-label="Competencias">
     <SecondTitlePfl :secondTitle="secondTitle!" />
+
     <div class="skillBoxes">
-      <div v-for="skill in skills">
-        <SkillBoxPfl :skill="skill" class="skillBox" />
+      <div v-for="skill in skills" class="skillBox">
+        <SkillBoxPfl :skill="skill" />
       </div>
     </div>
+
     <ArrowButtonPfl :id="4" class="arrowButton" />
-  </div>
+  </section>
 </template>
+
 <script setup lang="ts">
 import { skills } from "~/data/dataBase";
 import { secondTitles } from "~/data/dataBase";
@@ -17,7 +20,7 @@ const secondTitle = secondTitles[2];
 </script>
 <style scoped>
 .skills {
-  height: 100dvh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;

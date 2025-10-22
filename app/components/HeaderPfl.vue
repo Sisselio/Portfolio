@@ -1,14 +1,17 @@
 <template>
-  <header class="header">
+  <header class="header" role="banner">
     <NuxtImg
       class="logo"
       src="/LogoPflVector.svg"
-      alt="Logo"
+      alt="Ir a la página de inicio"
       @click="irAHome"
     />
-    <NavbarPfl />
+    <nav aria-label="Navegación principal">
+      <NavbarPfl />
+    </nav>
   </header>
 </template>
+
 <script setup lang="ts">
 const router = useRouter();
 
