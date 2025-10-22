@@ -1,7 +1,7 @@
 <template>
   <div class="card" :class="{ reverse: index % 2 !== 0 }">
     <div class="cardLeft">
-      <NuxtImg :src="project.image" class="projectImage" />
+      <img :src="project.image" class="projectImage" />
     </div>
     <div class="cardRight">
       <p class="projectName">{{ project.name }}</p>
