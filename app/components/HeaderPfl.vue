@@ -22,6 +22,7 @@ function irAHome() {
   top: 0;
   left: 10;
   width: 100%;
+  height: 10dvh;
   z-index: 1000;
   padding: 1.5em 5em;
   display: flex;

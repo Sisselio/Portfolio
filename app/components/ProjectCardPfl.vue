@@ -1,7 +1,7 @@
 <template>
   <div class="card" :class="{ reverse: index % 2 !== 0 }">
     <div class="cardLeft">
-      <NuxtImg :src="project.image" class="project-image" />
+      <NuxtImg :src="project.image" class="projectImage" />
     </div>
     <div class="cardRight">
       <p class="projectName">{{ project.name }}</p>
@@ -15,6 +15,7 @@
       </div>
     </div>
   </div>
+  <hr />
 </template>
 <script setup lang="ts">
 import type { Skill } from "~/data/dataBase";
@@ -47,7 +48,7 @@ defineProps<{
   flex: 0 0 50%;
 }
 
-.project-image {
+.projectImage {
   width: 16em;
   height: auto;
   border-radius: 0.5em;
