@@ -41,11 +41,6 @@ body {
 
 }
 
-:focus {
-  outline: 2px solid blue;
-  outline-offset: 2px;
-}
-
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;

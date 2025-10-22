@@ -1,10 +1,11 @@
 <template>
-  <div class="hero" id="Home">
+  <section class="hero" id="Home" aria-label="Sección principal">
     <TitlePfl class="title" :title="title" />
+
     <div class="arrowButton">
       <ArrowButtonPfl class="arrowButton" :id="1" />
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -17,7 +18,7 @@ import { title } from "~/data/dataBase";
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 100dvh;
+  min-height: 100dvh;
   padding: 5em 0;
 }
 

@@ -1,16 +1,24 @@
 <template>
-  <div class="contact" id="Contactar">
+  <section class="contact" id="contactar" aria-label="Formulario de contacto">
     <SecondTitlePfl :second-title="secondTitle!" />
-    <div class="form">
-      <form v-for="(form, index) in forms" :key="form.name">
+
+    <form class="form">
+      <div v-for="(form, index) in forms" class="form-field">
         <label :for="form.name">{{ form.name }}</label>
-        <br />
-        <input :type="form.type" :name="form.name" class="input" />
-      </form>
+        <input
+          :id="form.name"
+          :type="form.type"
+          :name="form.name"
+          class="input"
+          required
+        />
+      </div>
+
       <button type="submit" class="button">Contactar</button>
-    </div>
-  </div>
+    </form>
+  </section>
 </template>
+
 <script setup lang="ts">
 import { secondTitles } from "~/data/dataBase";
 import { forms } from "~/data/dataBase";
@@ -19,7 +27,7 @@ const secondTitle = secondTitles[4];
 </script>
 <style scoped>
 .contact {
-  height: 100dvh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
