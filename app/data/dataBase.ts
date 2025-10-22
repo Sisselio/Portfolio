@@ -71,8 +71,8 @@ export const skills: Skill[] = [
     icon: "devicon:vuejs",
   },
   {
-    name: "Tailwind",
-    icon: "devicon:tailwindcss",
+    name: "Sass",
+    icon: "devicon:sass",
   },
   {
     name: "Bootstrap",
@@ -95,6 +95,7 @@ export const skills: Skill[] = [
     icon: "devicon:git",
   },
 ];
+
 function getSkillsByNames(names: string[], skillList: Skill[]): Skill[] {
   return names
     .map((name) => skillList.find((skill) => skill.name === name))
@@ -105,8 +106,8 @@ export const projects: Project[] = [
   {
     image: "/vue.png",
     name: "Proyecto Vue",
-    languages: getSkillsByNames(["Vue", "JavaScript", "Tailwind"], skills),
-    description: "Proyecto con Vue y Tailwind CSS.",
+    languages: getSkillsByNames(["Vue", "JavaScript", "Sass"], skills),
+    description: "Proyecto con Vue y Sass.",
   },
   {
     image: "/java.png",

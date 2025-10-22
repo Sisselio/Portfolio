@@ -23,7 +23,7 @@ defineProps<{
   width: 100%;
   gap: 0.5em;
   font-size: 2em;
-  margin-top: 1em;
+  margin-top: 10dvh;
 }
 .secondTitle hr {
   display: flex;
