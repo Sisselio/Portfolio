@@ -27,6 +27,18 @@ importers:
         specifier: ^4.5.1
         version: 4.6.3(vue@3.5.22)
     devDependencies:
+      '@babel/code-frame':
+        specifier: ^7.27.1
+        version: 7.27.1
+      '@babel/core':
+        specifier: ^7.28.4
+        version: 7.28.4
+      '@babel/helper-module-imports':
+        specifier: ^7.27.1
+        version: 7.27.1
+      '@babel/helper-plugin-utils':
+        specifier: ^7.27.1
+        version: 7.27.1
       sass:
         specifier: ^1.93.2
         version: 1.93.2
