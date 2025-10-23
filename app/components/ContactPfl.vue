@@ -53,6 +53,7 @@ const secondTitle = secondTitles[4];
   border-radius: 0.9375em;
   width: 55dvw;
   height: 4em;
+  padding-left: 1em;
 }
 .button {
   padding: 0.75em;

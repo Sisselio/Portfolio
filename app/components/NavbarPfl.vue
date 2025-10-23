@@ -7,6 +7,7 @@
           :key="tab.id"
           :relocation="tab.relocation"
           :tab="tab"
+          @click="irA(tab.relocation)"
         ></Button-pfl>
       </li>
     </ul>
@@ -14,6 +15,11 @@
 </template>
 <script setup lang="ts">
 import { tabs } from "~/data/dataBase";
+const router = useRouter();
+
+function irA(destino: string) {
+  router.push(destino);
+}
 </script>
 <style scoped>
 .navbar {
