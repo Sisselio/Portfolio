@@ -1,6 +1,6 @@
 <template>
-  <button class="button">
-    <a class="a" :href="tab.relocation">{{ tab.title }}</a>
+  <button class="button" @click="$emit('click')">
+    {{ tab.title }}
   </button>
 </template>
 <script setup lang="ts">

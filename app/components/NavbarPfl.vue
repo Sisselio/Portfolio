@@ -5,7 +5,6 @@
         <Button-pfl
           v-for="tab in tabs"
           :key="tab.id"
-          :relocation="tab.relocation"
           :tab="tab"
           @click="irA(tab.relocation)"
         ></Button-pfl>
