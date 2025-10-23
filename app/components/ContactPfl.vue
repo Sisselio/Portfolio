@@ -69,7 +69,7 @@ const secondTitle = secondTitles[4];
   border-radius: 0.9375em;
   border: none;
   transition: 0.5s;
-  width: 48em;
+  width: 55dvw;
   height: 4em;
 }
 </style>
