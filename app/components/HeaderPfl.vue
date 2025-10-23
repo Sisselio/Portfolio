@@ -2,7 +2,7 @@
   <header class="header" role="banner">
     <NuxtImg
       class="logo"
-      src="/LogoPflVector.svg"
+      src="/favicon.svg"
       alt="Ir a la página de inicio"
       @click="irAHome"
     />
@@ -14,7 +14,7 @@
   <header class="headerSm" role="banner">
     <NuxtImg
       class="logo"
-      src="/LogoPflVector.svg"
+      src="/favicon.svg"
       alt="Ir a la página de inicio"
       @click="irAHome"
     />

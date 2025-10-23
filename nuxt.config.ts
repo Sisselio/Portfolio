@@ -16,5 +16,8 @@ export default defineNuxtConfig({
   ssr: true,
   app: {
     baseURL: "/portfolio/",
+    head: {
+      link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+    },
   },
 });
